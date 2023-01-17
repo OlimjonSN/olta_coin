@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:olta_coin/models/add_color.dart';
+import 'package:olta_coin/widget/main_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -29,6 +30,8 @@ class LoginScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                   ),
+                  MyWidget(title: 'Sign In', pressed: () {}),
+                  MyWidget(title: 'Create Account', pressed: () {})
                 ],
               );
             },
