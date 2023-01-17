@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:olta_coin/models/add_color.dart';
 
 class MyWidget extends StatelessWidget {
   final String title;
@@ -11,15 +12,21 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {},
-      child: Text(title),
-      style: ElevatedButton.styleFrom(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(19),
+    return Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          gradient: LinearGradient(
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+            colors: [buttonColorA, buttonColorB],
+          ),
         ),
-        fixedSize: Size(372, 70),
-      ),
-    );
+        child: ElevatedButton(
+          onPressed: () {},
+          style: ElevatedButton.styleFrom(
+            fixedSize: const Size(372, 70),
+          ),
+          child: Text(title),
+        ));
   }
 }
