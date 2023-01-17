@@ -12,7 +12,9 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: pressed(),
+      child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           gradient: LinearGradient(
@@ -21,12 +23,8 @@ class MyWidget extends StatelessWidget {
             colors: [buttonColorA, buttonColorB],
           ),
         ),
-        child: ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(
-            fixedSize: const Size(372, 70),
-          ),
-          child: Text(title),
-        ));
+        child: Text(title),
+      ),
+    );
   }
 }
