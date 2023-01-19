@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:olta_coin/screens/login_screen.dart';
+import 'package:olta_coin/screens/register_screen.dart';
+import 'package:olta_coin/screens/signIn_screen.dart';
 import 'package:olta_coin/screens/splash_screen.dart';
 
 void main() {
@@ -16,10 +18,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Oltain Crypto',
       theme: ThemeData(primaryColorDark: Colors.black),
-      initialRoute: '/splashScreen',
+      initialRoute: 'signIn',
       routes: {
-        '/splashScreen': (context) => const SplashScreen(),
-        '/login': (context) => const LoginScreen()
+        'splashScreen': (context) => const SplashScreen(),
+        'login': (context) => const LoginScreen(),
+        'signIn': (context) => const SignInScreen(),
+        'register': (context) => const RegisterScreen(),
       },
     );
   }
