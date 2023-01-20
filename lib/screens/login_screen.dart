@@ -46,9 +46,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       MainButton(
                         title: 'Sign In',
                         route: () {
-                          // setState(() {
-                          //   Navigator.pushNamed(context, 'signIn');
-                          // });
+                          setState(() {
+                            Navigator.pushNamed(context, 'signIn');
+                          });
                         },
                       ),
                       MainButton(
