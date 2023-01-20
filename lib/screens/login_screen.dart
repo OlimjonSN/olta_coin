@@ -43,17 +43,21 @@ class _LoginScreenState extends State<LoginScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      MainButton(
-                        title: 'Sign In',
-                        route: () {
-                          setState(() {
-                            Navigator.pushNamed(context, 'signIn');
-                          });
+                      InkWell(
+                        onTap: () {
+                          print('object');
                         },
+                        child: MainButton(
+                          title: 'Sign In',
+                        ),
                       ),
-                      MainButton(
-                        title: 'Create Account',
-                        route: () {},
+                      InkWell(
+                        onTap: () {
+                          print('object');
+                        },
+                        child: MainButton(
+                          title: 'Create Account',
+                        ),
                       )
                     ],
                   )

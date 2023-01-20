@@ -20,11 +20,16 @@ class SignInScreen extends StatelessWidget {
                 SizedBox(
                   child: Image.asset('images/olta.png'),
                 ),
-                TextFormField(
-                  style: TextStyle(color: textFieldColor),
+                TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                  ),
+                      border: OutlineInputBorder(),
+                      fillColor: textFieldColor,
+                      filled: true,
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(18))),
                 )
               ],
             );
