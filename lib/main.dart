@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Oltain Crypto',
       theme: ThemeData(primaryColorDark: Colors.black),
-      initialRoute: 'login',
+      initialRoute: 'splashScreen',
       routes: {
         'splashScreen': (context) => const SplashScreen(),
         'login': (context) => const LoginScreen(),

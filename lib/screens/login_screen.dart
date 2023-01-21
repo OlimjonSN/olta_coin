@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       InkWell(
                         onTap: () {
-                          print('object');
+                          Navigator.pushNamed(context, 'signIn');
                         },
                         child: MainButton(
                           title: 'Sign In',
@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       InkWell(
                         onTap: () {
-                          print('object');
+                          Navigator.pushNamed(context, 'register');
                         },
                         child: MainButton(
                           title: 'Create Account',
