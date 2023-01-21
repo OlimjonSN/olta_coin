@@ -8,3 +8,4 @@ Color buttonColorB = const Color(0xFF0DF4BF);
 Color textFieldColor = const Color(0xFF141414);
 Color smallTextColor = const Color(0xFFc7c7c7);
 Color secondTextFieldColor = const Color(0xFF001724);
+Color white = Colors.white70;
