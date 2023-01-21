@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774263534735",
+    "project_id": "olta-dc37a",
+    "storage_bucket": "olta-dc37a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774263534735:android:40dd6587aafa2f130b6cfa",
+        "android_client_info": {
+          "package_name": "com.example.olta_coin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774263534735-8f6khq4a6ens30mpqmkomsmlkv2u9l1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVf8R5vslTU7x3voCcBUjz5SJLCoZTdkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774263534735-8f6khq4a6ens30mpqmkomsmlkv2u9l1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
